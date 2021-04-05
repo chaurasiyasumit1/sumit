@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,14 +14,19 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
+p{
+font-size:150%;
+}
+#example1 {
+  background:  url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfG27EQgKB4TaVr57-PBjZfRtCFF6OoBjBwA&usqp=CAU) left top;
+  padding: 15px;
+}
 header{
 background-color:black;
 width:100%;
 height:30%;
-color:red;
 color:silver;
 text-align:center;
-font-size:70px;
 font-size:50px;
 }
 .footer {
@@ -28,6 +34,7 @@ font-size:50px;
   text-align:center;
   background: black;
   color:white;
+  font-size:10px;
 }
 h1{
 text-align:center
@@ -43,7 +50,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: silver;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -51,7 +58,7 @@ li a {
 
 li a, .dropbtn {
   display: inline-block;
-  color: white;
+  color: silver;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -110,37 +117,46 @@ height:60%;
 </head>
 <body>
 <header>
-AND PUBLIC SCHOOL
+SILVER SCISSORS
 </header>
 <ul>
   <li><a href="file:///C:/Users/AceR-/Desktop/new%20HTML/home.html">Home</a></li>
-    
-<li class="sumit">
-    <a href="javascript:void(0)" class="dropbtn">About Us</a>
-    <div class="dropdown-content">
-  
-  <a href="file:///C:/Users/AceR-/Desktop/new%20HTML/about%20us.html">History</a>
-  <li><a href="file:///C:/Users/AceR-/Desktop/new%20HTML/alumnus.html">Alumnus</a></li>
-  <li><a href="file:///C:/Users/AceR-/Desktop/new%20HTML/academics.html">Academics</a></li>
-  
-<li class="sumit">
-    <a href="javascript:void(0)" class="dropbtn">Gallery</a>
-    <div class="dropdown-content">
-    <a href="file:///C:/Users/AceR-/Desktop/new%20HTML/school%20gallery.html">school</a>
-    <a href="file:///C:/Users/AceR-/Desktop/new%20HTML/school%20function.html"> Function</a>
-  </div>
-  </li>
+  <li><a href="file:///C:/Users/AceR-/Desktop/new%20HTML/alumnus.html">Services</a></li>
+  <li><a href="file:///C:/Users/AceR-/Desktop/new%20HTML/academics.html">Contact</a></li>
 </ul>
-<hr>
-<h1> ACADEMICS OF AND</h1>
-<p> The academics of AND is strictly based on the NATIONAL POLICY ON EDUCATION(NPE) and guidlines of CBSE & NCERT.</p>
-<p> AND PUBLIC SCHOOL conducts classes from play to XIIth standard</p>
+
+
+
+<section>
+  <img class="mySlides" src="https://d3nn873nee648n.cloudfront.net/900x600/1032/20-SM29720.jpg" style="width:100%">
+  <img class="mySlides" src="https://d3nn873nee648n.cloudfront.net/900x600/17370/120-SM768762.jpg" style="width:100%">
+  <img class="mySlides" src="https://d3nn873nee648n.cloudfront.net/900x600/17352/20-ER767506.jpg" style="width:100%">
+ <img class="mySlides" src="https://d3nn873nee648n.cloudfront.net/900x600/9995/16-SM269114.jpg" style="width:100%">
+
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
 
 
 
 
 <hr>
-
 <div class="footer">
   <p>&#169;2020,AND PUBLIC SCHOOL(all rights reserved)</p>
   <p>&#174; designed by <a href="https://www.facebook.com/Sumitrajtejaswi"  target="_blank">SUMIT RAJ TEJASWI</a></p>
